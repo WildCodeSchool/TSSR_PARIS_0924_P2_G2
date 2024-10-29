@@ -1,0 +1,35 @@
+Administrateur Documentation - Projet 2
+Prérequis Techniques
+Serveur Windows :
+
+Système d'exploitation : Windows Server 2022
+PowerShell Core version 7.4 installée
+Serveur Debian :
+
+Système d'exploitation : Debian 12
+Accès en tant que root
+Machines distantes :
+
+Machines Windows 10
+Machines Ubuntu 22.04 LTS
+Étapes d'installation et de configuration
+Sur le serveur Debian :
+Connectez-vous en tant que root sur le serveur Debian.
+
+Téléchargez et installez les modules SSH sur le serveur Debian et Ubuntu en exécutant la commande suivante :
+
+sudo apt-get install openssh-server
+Générez une paire de clés SSH sur le serveur Debian en exécutant la commande suivante :
+
+ssh-keygen
+Suivez les instructions à l'écran pour configurer les paramètres de la clé SSH.
+
+Copiez la clé publique générée vers le serveur Ubuntu en utilisant la commande ssh-copy-id. Assurez-vous de remplacer l'utilisateur par le nom d'utilisateur approprié sur le serveur Ubuntu et le serveur par l'adresse IP ou le nom d'hôte du serveur Ubuntu :
+ssh-copy-id user@server
+Vous serez invité à saisir le mot de passe de l'utilisateur sur le serveur Ubuntu pour finaliser la copie de la clé SSH.
+
+Une fois la clé copiée avec succès, vous devriez pouvoir vous connecter au serveur Ubuntu depuis le serveur Debian sans être invité à saisir un mot de passe.
+
+Sur le serveur Windows :
+FAQ
+Voici quelques solutions aux problèmes courants rencontrés lors de l'installation et de la configuration du projet :
