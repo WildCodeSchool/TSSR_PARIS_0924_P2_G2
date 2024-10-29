@@ -1,0 +1,24 @@
+
+# Fonction pour renommer un répertoire distant
+renommer_repertoire() {
+    $logs début renommage du répertoire
+
+    # Demande de l'ancien nom du répertoire
+    read -p "Entrez l'ancien nom du répertoire : " ancien_nom
+
+    # Demande du nouveau nom du répertoire
+    read -p "Entrez le nouveau nom du répertoire : " nouveau_nom
+
+    # Renommer le répertoire distant
+    $sshtarget "mv '$ancien_nom' '$nouveau_nom'"
+
+    # Vérification si le répertoire a été renommé avec succès
+    if $sshtarget [ -d '$nouveau_nom' ]"; then
+        echo "Le répertoire '$ancien_nom' a été renommé avec succès en '$nouveau_nom'."
+        $logs Répertoire $ancien_nom renommé avec succès en $nouveau_nom.
+    else
+        echo "Échec du renommage du répertoire '$ancien_nom'."
+        $logs Échec du renommage du répertoire $ancien_nom.
+    fi
+
+    $logs Fin renommage du répertoire
