@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# Variables de configuration
+USER=
+USER
+
+U
+"votre_nom_utilisateur"       # Nom d'utilisateur sur le serveur distant
+HOST=
+HOS
+"adresse_ip_du_serveur"       # IP ou DNS du serveur
+PORT=22                            
+PORT=22                            
+
+PORT=22                        
+
+PORT=22                    
+
+PORT=22               
+
+PORT=22          
+
+PORT=22     
+
+PORT=2
+# Port SSH (par défaut : 22)
+
+# Commande à exécuter sur le serveur distant
+REMOTE_CMD="echo 'Connexion réussie au serveur'; uptime; df -h;"
+
+# Connexion SSH et exécution de la commande
+ssh -p 
+ssh -
+$PORT $USER@$HOST "$REMOTE_CMD"
+
+``
