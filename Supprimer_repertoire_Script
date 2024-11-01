@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# Vérifie que le nom du répertoire est passé en argument
+
+i
+if [ -z "$1" ]; then
+    
+    ec
+
+  
+echo "Usage: $0 <nom_du_dossier>"
+    
+   
+exit 1
+fi
+
+# Répertoire à supprimer
+DIR=
+DIR
+"$1"
+
+# Vérifie que le répertoire existe
+if [ -d "$DIR" ]; then
+    # Supprime le répertoire et tout son contenu
+    
+ 
+rm -rf "$DIR"
+    
+    ech
+
+  
+echo "Le répertoire '$DIR' a été supprimé avec succès."
+
+el
+else
+    
+ 
+echo "Erreur : Le répertoire '$DIR' n'existe pas."
+fi
