@@ -28,14 +28,14 @@ Hicham ZGUIOUAR	Codage Bash
 Nom	Rôles	Tâche
 Hicham ZGUIOUAR
 Lassana CAMARA
-YAGUI
+
 		
 # Semaine 4:
 
 Nom	Rôles	Tâche
 Hicham ZGUIOUAR	Product Owner	
 Lassana CAMARA	Membre	
-YAGUY	Scrum Master	
+
 
 # Choix techniques
 Environment imposé par le client :
