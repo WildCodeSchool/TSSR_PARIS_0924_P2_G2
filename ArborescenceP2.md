@@ -60,7 +60,7 @@
   - #### 3. Retour au menu précédent
 
 Comment l'utiliser
-Pour utiliser SUMO, une fois le script lancé il vous suffit de naviguer dans les menu en tapant le numero correspondant aux choix que voulez voulez effectuer.
+Pour utiliser LASHI, une fois le script lancé il vous suffit de naviguer dans les menu en tapant le numero correspondant aux choix que voulez voulez effectuer.
 
 au lancement du script il vous seras demander d'entrer un nom d'utilisateur et de cibler une machine, pour viser la machine il faudra entrer l'adresse IP de la machine distante
 
